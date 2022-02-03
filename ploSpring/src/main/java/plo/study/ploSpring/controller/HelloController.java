@@ -33,18 +33,16 @@ public class HelloController {
         Hello hello = new Hello();
         hello.setName(name);
         return hello;
-
     }
 
     static class Hello {
         private String name;
 
-        //javabinjack , getterSetter , property방식
-        public String getName() { //getter
+        public String getName() {
             return name;
         }
 
-        public void setName(String name) { //setter
+        public void setName(String name) {
             this.name = name;
         }
     }
